@@ -1,5 +1,5 @@
 import { useLocation } from 'preact-iso'
-import { cn } from '../lib/utils'
+import { NavLink } from './nav-link'
 
 export function Header() {
   const { url } = useLocation()
@@ -7,12 +7,9 @@ export function Header() {
   return (
     <header>
       <nav class="flex gap-4">
-        <a href="/" class={cn(url === '/' && 'active', 'text-blue-500')}>
-          Home
-        </a>
-        <a href="/404" class={url === '/404' && 'active'}>
-          404
-        </a>
+        <NavLink href="/">Home</NavLink>
+        <NavLink href="/form">Form</NavLink>
+        <NavLink href="/404">404</NavLink>
       </nav>
     </header>
   )

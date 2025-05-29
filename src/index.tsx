@@ -7,6 +7,7 @@ import {
 } from 'preact-iso'
 
 import { Header } from './components/Header.jsx'
+import { Form } from './pages/Home/form.jsx'
 import { Home } from './pages/Home/index.jsx'
 import { NotFound } from './pages/_404.jsx'
 import './style.css'
@@ -18,6 +19,7 @@ export function App() {
       <main>
         <Router>
           <Route path="/" component={Home} />
+          <Route path="/form" component={Form} />
           <Route default component={NotFound} />
         </Router>
       </main>

@@ -37,7 +37,7 @@ export const Form = () => {
         <div class="grid gap-1">
           <Label htmlFor={password.id}>Password</Label>
           <Input
-            {...getInputProps(email, { type: 'password' })}
+            {...getInputProps(password, { type: 'password' })}
             placeholder="Enter your password"
           />
           <div class="text-red-500">{password.errors}</div>

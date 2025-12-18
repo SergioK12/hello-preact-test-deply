@@ -35,7 +35,7 @@ export function Home() {
           </Card>
         )}
 
-        <Button>Hello!</Button>
+        <Button>Hola señor sergio, estamos en deply!</Button>
       </Stack>
     </div>
   )

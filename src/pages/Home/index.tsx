@@ -19,24 +19,7 @@ export function Home() {
 
   return (
     <div class="home">
-      <a href="https://preactjs.com" target="_blank" rel="noopener noreferrer">
-        <img src={preactLogo} alt="Preact logo" height="160" width="160" />
-      </a>
-
-      <Stack>
-        {isLoading && <p>Loading...</p>}
-        {error && <p>Error loading data</p>}
-        {data && (
-          <Card>
-            <CardHeader>
-              <CardTitle>{data.title}</CardTitle>
-            </CardHeader>
-            <CardContent>{data.body}</CardContent>
-          </Card>
-        )}
-
-        <Button>Hola señor sergio, estamos en deploy!</Button>
-      </Stack>
+      <h1>BANANO LE DICEN A SILVA<h1/>
     </div>
   )
 }

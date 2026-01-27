@@ -18,8 +18,8 @@ export function Home() {
   )
 
   return (
-    <div class="home">
-      <h1>BANANO LE DICEN A SILVA<h1/>
+    <div className="home">
+      <h1>BANANO LE DICEN A SILVA</h1>
     </div>
   )
 }
